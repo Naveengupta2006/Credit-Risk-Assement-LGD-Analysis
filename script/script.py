@@ -233,7 +233,7 @@ def perform_risk_segmentation(customer_data):
 
     # these threshold numbers are examples.
     condition_high_collateral = df['collateral_coverage']>= 1.5
-    condition_high_bounces = df['cheque_bounces'] >= 3 
+    condition_high_bounces = df['cheque_bounces'] >= 3
     condition_high_missed = df['missed_repayments'] >= 4
     condition_multiple_loans = df['number_of_loans'] >= 3
 
@@ -374,4 +374,3 @@ if p_value_ttest < 0.05:
 else:
     print("Result: No significant difference found between the groups.")
 
-    
